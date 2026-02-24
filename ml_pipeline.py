@@ -15,7 +15,7 @@ with open('model.pkl','wb') as f:
 print("Model saved")
 prediction = model.predict([[4]])[0]
 print(f"Prediction : {prediction:.1f} (Expected:8.0)")
-if abs(Prediction-8.0)<0.1:
+if abs(prediction-8.0)<0.1:
     print("Validation Passed")
     sys.exit(0)
 else:
